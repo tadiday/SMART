@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Darwin
 
 
 struct ContentView: View {
@@ -18,30 +19,16 @@ struct ContentView: View {
         VStack {
             Spacer()
             
-            Text(doorStatus)
-                .font(.largeTitle)
-                .padding(.bottom)
-            
             Button {
-                if isOpen == true {
-                    close()
-                    buttonColor = .green
-                    buttonMessage = "Open"
-                    doorStatus = "Door is closed"
-                    isOpen = false
-                } else if isOpen == false {
-                    open()
+                toggle()
+                buttonColor = .green
+                let time = DispatchTime.now() + 1.0
+                DispatchQueue.main.asyncAfter(deadline:time){
                     buttonColor = .red
-                    buttonMessage = "Close"
-                    doorStatus = "Door is open"
-                    isOpen = true
                 }
             } label: {
                 ZStack{
                     Circle().padding(.all, 50.0).frame(width: 300.0, height: 300.0).foregroundColor(buttonColor)
-                    Text(buttonMessage)
-                        .font(.title)
-                        .foregroundColor(Color.black)
                 }
             }
             
@@ -57,8 +44,8 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-func open() {
-    guard let ethansURL =  URL(string:"http://108.28.58.243:42069")
+func toggle() {
+    guard let ethansURL =  URL(string:"http://10.42.0.104")
            else{
                return
            }
@@ -66,34 +53,7 @@ func open() {
            //let body = ""
            //let finalBody = body.data(using: .utf8)
            var request = URLRequest(url: ethansURL)
-           request.httpMethod = "POST /Open"
-           //request.httpBody = finalBody
-           
-           URLSession.shared.dataTask(with: request){
-               (data, response, error) in
-               print(response as Any)
-               if let error = error {
-                   print(error)
-                   return
-               }
-               guard let data = data else{
-                   return
-               }
-               print(data, String(data: data, encoding: .utf8) ?? "*unknown encoding*")
-               
-           }.resume()
-}
-
-func close() {
-    guard let ethansURL =  URL(string:"http://108.28.58.243:42069")
-           else{
-               return
-           }
-           
-           //let body = ""
-           //let finalBody = body.data(using: .utf8)
-           var request = URLRequest(url: ethansURL)
-           request.httpMethod = "POST /Close"
+           request.httpMethod = "POST /Toggle"
            //request.httpBody = finalBody
            
            URLSession.shared.dataTask(with: request){
