@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46ABC6D12B16AF1C00D744B1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ABC6D02B16AF1C00D744B1 /* HomeView.swift */; };
 		AA855D142AF69EEE004DDE4C /* HUBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA855D132AF69EEE004DDE4C /* HUBApp.swift */; };
 		AA855D162AF69EEE004DDE4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA855D152AF69EEE004DDE4C /* ContentView.swift */; };
 		AA855D182AF69EF1004DDE4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA855D172AF69EF1004DDE4C /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46ABC6D02B16AF1C00D744B1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		AA855D102AF69EEE004DDE4C /* HUB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HUB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA855D132AF69EEE004DDE4C /* HUBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUBApp.swift; sourceTree = "<group>"; };
 		AA855D152AF69EEE004DDE4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 		AA855D122AF69EEE004DDE4C /* HUB */ = {
 			isa = PBXGroup;
 			children = (
+				46ABC6D02B16AF1C00D744B1 /* HomeView.swift */,
 				AA855D132AF69EEE004DDE4C /* HUBApp.swift */,
 				AA855D152AF69EEE004DDE4C /* ContentView.swift */,
 				AA855D172AF69EF1004DDE4C /* Assets.xcassets */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46ABC6D12B16AF1C00D744B1 /* HomeView.swift in Sources */,
 				AA855D162AF69EEE004DDE4C /* ContentView.swift in Sources */,
 				AA855D142AF69EEE004DDE4C /* HUBApp.swift in Sources */,
 			);
