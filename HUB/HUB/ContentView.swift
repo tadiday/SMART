@@ -45,7 +45,7 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 func toggle() {
-    guard let ethansURL =  URL(string:"http://10.42.0.104")
+    guard let ethansURL =  URL(string:"http://192.168.5.178")
            else{
                return
            }
