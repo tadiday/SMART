@@ -6,12 +6,11 @@
 //
 
 import SwiftUI
-
 @main
 struct HUBApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }

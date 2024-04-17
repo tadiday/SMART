@@ -6,12 +6,12 @@ struct Device: Identifiable {
 }
 
 struct HomeView: View {
-    @State private var devices: [Device] = [
+    @State private var devices: [Device] = [] /*[
         Device(id: 1, name: "Device 1"),
         Device(id: 2, name: "Device 2"),
         Device(id: 3, name: "Device 3"),
         Device(id: 4, name: "Device 4")
-    ]
+    ]*/
 
     var body: some View {
           NavigationView {
@@ -44,6 +44,16 @@ struct HomeView: View {
                           }
                       }
                       .onDelete(perform: deleteDevice)
+                      
+                      NavigationLink(destination: ContentView1()) {
+                          Text("Device 1")
+                      }
+                      NavigationLink(destination: ContentView2()) {
+                          Text("Device 2")
+                      }
+                      NavigationLink(destination: ContentView3()) {
+                          Text("Device 3")
+                      }
                   }
                   .listStyle(.insetGrouped)
               }
@@ -68,7 +78,7 @@ struct DeviceView: View {
             Text("Im not a garage")
         }
         else {
-            ContentView()
+            ContentView1()
         }
     
     }

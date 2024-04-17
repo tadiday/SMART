@@ -8,23 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		46ABC6D12B16AF1C00D744B1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ABC6D02B16AF1C00D744B1 /* HomeView.swift */; };
-		AA855D142AF69EEE004DDE4C /* HUBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA855D132AF69EEE004DDE4C /* HUBApp.swift */; };
+		AA855D142AF69EEE004DDE4C /* SmartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA855D132AF69EEE004DDE4C /* SmartApp.swift */; };
 		AA855D162AF69EEE004DDE4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA855D152AF69EEE004DDE4C /* ContentView.swift */; };
 		AA855D182AF69EF1004DDE4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA855D172AF69EF1004DDE4C /* Assets.xcassets */; };
 		AA855D1B2AF69EF1004DDE4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA855D1A2AF69EF1004DDE4C /* Preview Assets.xcassets */; };
+		AAA931F62BCD9F04005469A5 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA931F52BCD9F04005469A5 /* ContentView2.swift */; };
+		AAA931F82BCDA0EF005469A5 /* ContentView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA931F72BCDA0EF005469A5 /* ContentView3.swift */; };
+		AAA931FC2BCDA3CC005469A5 /* ContentView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA931FB2BCDA3CC005469A5 /* ContentView1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		46ABC6D02B16AF1C00D744B1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		AA855D102AF69EEE004DDE4C /* HUB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HUB.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA855D132AF69EEE004DDE4C /* HUBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUBApp.swift; sourceTree = "<group>"; };
+		AA855D102AF69EEE004DDE4C /* Smart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA855D132AF69EEE004DDE4C /* SmartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartApp.swift; sourceTree = "<group>"; };
 		AA855D152AF69EEE004DDE4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AA855D172AF69EF1004DDE4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA855D1A2AF69EF1004DDE4C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AAA931F52BCD9F04005469A5 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
+		AAA931F72BCDA0EF005469A5 /* ContentView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView3.swift; sourceTree = "<group>"; };
+		AAA931FB2BCDA3CC005469A5 /* ContentView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AA855D0D2AF69EEE004DDE4C /* Frameworks */ = {
+		AA84B9B52BBDDA5E00990EFC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,7 +43,7 @@
 		AA855D072AF69EEE004DDE4C = {
 			isa = PBXGroup;
 			children = (
-				AA855D122AF69EEE004DDE4C /* HUB */,
+				AA855D122AF69EEE004DDE4C /* Smart */,
 				AA855D112AF69EEE004DDE4C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,21 +51,24 @@
 		AA855D112AF69EEE004DDE4C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA855D102AF69EEE004DDE4C /* HUB.app */,
+				AA855D102AF69EEE004DDE4C /* Smart.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AA855D122AF69EEE004DDE4C /* HUB */ = {
+		AA855D122AF69EEE004DDE4C /* Smart */ = {
 			isa = PBXGroup;
 			children = (
 				46ABC6D02B16AF1C00D744B1 /* HomeView.swift */,
-				AA855D132AF69EEE004DDE4C /* HUBApp.swift */,
+				AA855D132AF69EEE004DDE4C /* SmartApp.swift */,
 				AA855D152AF69EEE004DDE4C /* ContentView.swift */,
+				AAA931FB2BCDA3CC005469A5 /* ContentView1.swift */,
+				AAA931F52BCD9F04005469A5 /* ContentView2.swift */,
+				AAA931F72BCDA0EF005469A5 /* ContentView3.swift */,
 				AA855D172AF69EF1004DDE4C /* Assets.xcassets */,
 				AA855D192AF69EF1004DDE4C /* Preview Content */,
 			);
-			path = HUB;
+			path = Smart;
 			sourceTree = "<group>";
 		};
 		AA855D192AF69EF1004DDE4C /* Preview Content */ = {
@@ -73,21 +82,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AA855D0F2AF69EEE004DDE4C /* HUB */ = {
+		AA855D0F2AF69EEE004DDE4C /* Smart */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA855D1E2AF69EF1004DDE4C /* Build configuration list for PBXNativeTarget "HUB" */;
+			buildConfigurationList = AA855D1E2AF69EF1004DDE4C /* Build configuration list for PBXNativeTarget "Smart" */;
 			buildPhases = (
 				AA855D0C2AF69EEE004DDE4C /* Sources */,
-				AA855D0D2AF69EEE004DDE4C /* Frameworks */,
+				AA84B9B52BBDDA5E00990EFC /* Frameworks */,
 				AA855D0E2AF69EEE004DDE4C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = HUB;
+			name = Smart;
+			packageProductDependencies = (
+			);
 			productName = HUB;
-			productReference = AA855D102AF69EEE004DDE4C /* HUB.app */;
+			productReference = AA855D102AF69EEE004DDE4C /* Smart.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +116,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AA855D0B2AF69EEE004DDE4C /* Build configuration list for PBXProject "HUB" */;
+			buildConfigurationList = AA855D0B2AF69EEE004DDE4C /* Build configuration list for PBXProject "Smart" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,11 +125,15 @@
 				Base,
 			);
 			mainGroup = AA855D072AF69EEE004DDE4C;
+			packageReferences = (
+				AA84B9B62BBDEB1500990EFC /* XCRemoteSwiftPackageReference "NetworkScanner" */,
+				AA84B9BB2BBDEF7B00990EFC /* XCRemoteSwiftPackageReference "wireguard-apple" */,
+			);
 			productRefGroup = AA855D112AF69EEE004DDE4C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AA855D0F2AF69EEE004DDE4C /* HUB */,
+				AA855D0F2AF69EEE004DDE4C /* Smart */,
 			);
 		};
 /* End PBXProject section */
@@ -140,9 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAA931FC2BCDA3CC005469A5 /* ContentView1.swift in Sources */,
 				46ABC6D12B16AF1C00D744B1 /* HomeView.swift in Sources */,
+				AAA931F62BCD9F04005469A5 /* ContentView2.swift in Sources */,
 				AA855D162AF69EEE004DDE4C /* ContentView.swift in Sources */,
-				AA855D142AF69EEE004DDE4C /* HUBApp.swift in Sources */,
+				AAA931F82BCDA0EF005469A5 /* ContentView3.swift in Sources */,
+				AA855D142AF69EEE004DDE4C /* SmartApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +288,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"HUB/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Smart/Preview Content\"";
 				DEVELOPMENT_TEAM = 7CS742M3GY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -299,7 +317,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"HUB/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Smart/Preview Content\"";
 				DEVELOPMENT_TEAM = 7CS742M3GY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -324,7 +342,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AA855D0B2AF69EEE004DDE4C /* Build configuration list for PBXProject "HUB" */ = {
+		AA855D0B2AF69EEE004DDE4C /* Build configuration list for PBXProject "Smart" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA855D1C2AF69EF1004DDE4C /* Debug */,
@@ -333,7 +351,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA855D1E2AF69EF1004DDE4C /* Build configuration list for PBXNativeTarget "HUB" */ = {
+		AA855D1E2AF69EF1004DDE4C /* Build configuration list for PBXNativeTarget "Smart" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA855D1F2AF69EF1004DDE4C /* Debug */,
@@ -343,6 +361,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA84B9B62BBDEB1500990EFC /* XCRemoteSwiftPackageReference "NetworkScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/wadetregaskis/NetworkScanner.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.6;
+			};
+		};
+		AA84B9BB2BBDEF7B00990EFC /* XCRemoteSwiftPackageReference "wireguard-apple" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://git.zx2c4.com/wireguard-apple";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = AA855D082AF69EEE004DDE4C /* Project object */;
 }

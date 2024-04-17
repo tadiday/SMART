@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ContentView1.swift
 //  HUB
 //
 //  Created by Ethan Spencer on 11/4/23.
@@ -7,9 +7,9 @@
 
 import SwiftUI
 import Darwin
+import Network
 
-
-struct ContentView: View {
+struct ContentView1: View {
     @State public var isOpen:Bool = true
     @State var doorStatus:String = bDoorStatus(status:true)
     @State var buttonMessage:String = bMessage(status:true)
@@ -17,6 +17,8 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            Spacer()
+            Text("Box 1")
             Spacer()
             
             Button {
@@ -40,12 +42,12 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView1()
     }
 }
 
 func toggle() {
-    guard let ethansURL =  URL(string:"http://192.168.5.178")
+    guard let ethansURL =  URL(string:"http://192.168.4.19")
            else{
                return
            }
